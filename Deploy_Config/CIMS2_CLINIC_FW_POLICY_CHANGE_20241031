@@ -1,0 +1,29 @@
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 description RID20201211-18848
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 match source-address 172.18.6.144_WCIMSCCPRD61C
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 match source-address 172.18.38.144_WCIMSCCPRD81C
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 match destination-address clinic_workstations
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 match application 2701_TCP
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 match application 3389_TCP
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 then permit
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 then log session-init
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0001 then log session-close
+
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 description RID20201211-18849
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 match source-address 172.18.6.144_WCIMSCCPRD61D
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 match source-address 172.18.38.144_WCIMSCCPRD81D
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 match destination-address clinic_workstations
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 match application 2701_TCP
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 match application 3389_TCP
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 then permit
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 then log session-init
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0002 then log session-close
+
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 description RID20201211-18850
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 match source-address 172.18.6.144_WCIMSCCPRD61E
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 match source-address 172.18.38.144_WCIMSCCPRD81E
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 match destination-address clinic_workstations
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 match application 2701_TCP
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 match application 3389_TCP
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 then permit
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 then log session-init
+set security policies from-zone DC6F_Tunnel to-zone CLINIC_WK policy DC6F_Tunnel-CLINIC_WK-0003 then log session-close
